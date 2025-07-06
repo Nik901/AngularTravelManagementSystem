@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { UserRegister } from './user-register/user-register';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+   standalone: true, // <== Important for standalone,
+   imports: [
+    UserRegister
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected title = 'TravelManagement';
+ 
+
+ 
 }
