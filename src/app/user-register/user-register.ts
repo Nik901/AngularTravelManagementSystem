@@ -17,11 +17,11 @@ export class UserRegister {
 
    constructor(private htpc: HttpClient) {}
  userdetails = new FormGroup({
-    emailId: new FormControl(''),
-    password: new FormControl(''),
+    emailid: new FormControl(''),
+    password1: new FormControl(''),
     cpassword: new FormControl(''),
     sirname: new FormControl(''),
-    uname: new FormControl('')
+    name1: new FormControl('')
   });
 
   protected title = 'TravelManagement';
